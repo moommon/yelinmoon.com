@@ -10,7 +10,9 @@ html body {
   background-color: #fff;
   color: #000;
 }
-
+.mobile-header {
+  display: none;
+}
 s p {
   margin: 0;
 }
@@ -292,4 +294,65 @@ a {
 }
 .sub-info-pt {
   height: 540px;
+}
+
+@media (max-width: 500px) {
+  .mobile-header {
+    display: block;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #fff solid 1px;
+  }
+  .mobile-header .header-name {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+  }
+  .mainartboard {
+    display: none;
+  }
+  .main-button-box {
+    position: relative;
+  }
+  .main-button {
+    background-color: #000;
+    border-bottom: #fff solid 1px;
+    width: 100vw;
+    height: 199px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  .main-button-1 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: 0.5s;
+    color: #fff;
+  }
+
+  .main-button-2 {
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    transition: 0.5s;
+    color: #fff;
+  }
+
+  .main-button-3 {
+    position: absolute;
+    right: 0px;
+    top: 400px;
+    transition: 0.5s;
+    color: #fff;
+  }
+
+  .mainbottom {
+    display: none;
+  }
 }
