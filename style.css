@@ -272,6 +272,7 @@ a {
 }
 .sub-detail-img-s {
   height: 180px;
+  transition: 0.5s;
 }
 .sub-detail-img-s:hover {
   height: 200px;
