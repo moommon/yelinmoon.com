@@ -1,0 +1,70 @@
+* {
+  font-family: "SUITE Variable", sans-serif;
+  color: #fff;
+  background-color: #000;
+  cursor: crosshair;
+}
+html body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  height: 80px;
+  width: 100vw;
+  border-bottom: #fff 2px solid;
+  display: flex;
+  align-items: center;
+}
+
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* top: 22px; */
+}
+header .header-content .yelinmoon {
+  font-size: 40px;
+}
+header .header-content .main-menu-box {
+  display: flex;
+  gap: 30px;
+}
+
+.main-container {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 330px);
+  column-gap: 24px;
+  row-gap: 60px;
+}
+.main-container .main-item {
+  /* background-color: #111; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .main-item :hover {
+  cursor: zoom-in;
+}
+
+.main-container .main-item .main-item-img {
+  margin-top: 20px;
+  width: 80%;
+}
+.main-container .main-item .main-item-name {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-top: 40px;
+}
