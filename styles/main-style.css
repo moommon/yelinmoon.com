@@ -61,6 +61,7 @@ header .header-content .main-menu-box {
 .main-container .main-item .main-item-img {
   margin-top: 20px;
   width: 80%;
+  border-radius: 10px;
 }
 .main-container .main-item .main-item-name {
   width: 100%;
