@@ -1,59 +1,39 @@
 let canvas = document.getElementById("main-canvas");
 var context = canvas.getContext("2d");
 
-var window_height = window.innerHeight - 90;
-var window_width = window.innerWidth;
+var window_height = window.innerHeight - 155;
+var window_width = 1200;
 
 canvas.width = window_width;
 canvas.height = window_height;
 
 canvas.style.background = "#222";
 
-// 바꿀 수 있는 배경 이미지 URL
-let backgroundImageUrl = "./images/main-background.png";
+// window.onresize = function (event) {
+//   canvas.width = window.innerWidth;
+//   canvas.height = window.innerHeight - 90;
+//   context.drawImage(background, 0, 0, 1920, 1080);
+// };
+canvas.onclick = function (event) {
+  // 캔버스의 위치를 고려해 마우스 좌표를 취득
+  const x = event.clientX - (window_width - 1200);
+  const y = event.clientY - 80;
+  alert(x);
+  // 마우스 클릭한 곳에 사각형 그리기
 
-let is_drawing = false;
-
-// 배경 이미지 로드
-let background = new Image();
-background.src = backgroundImageUrl;
-
-background.onload = function () {
-  context.drawImage(background, 0, 0, 1920, 1080);
+  context.fillRect(x - 15, y - 15, 30, 30);
+  context.fillStyle = "#fff";
 };
 
-window.onresize = function (event) {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight - 90;
-  context.drawImage(background, 0, 0, 1920, 1080);
-};
-
-canvas.addEventListener("touchstart", start, false);
-canvas.addEventListener("touchmove", draw, false);
-canvas.addEventListener("mouseover", start, false);
-canvas.addEventListener("mousemove", draw, false);
-
-function start(event) {
-  is_drawing = true;
-
-  context.beginPath();
-  context.moveTo(
-    event.clientX - canvas.offsetLeft,
-    event.pageY - canvas.offsetTop
-  );
-  event.preventDefault();
-}
-
-function draw(event) {
-  if (is_drawing) {
-    context.lineTo(
-      event.clientX - canvas.offsetLeft,
-      event.pageY - canvas.offsetTop
-    );
-    context.strokeStyle = "#fff";
-    context.lineWidth = "10";
-    context.lineCap = "round";
-    context.lineJoin = "round";
-    context.stroke();
-  }
-}
+context.fillStyle = "#555";
+context.fillRect(565, 320, 80, 80);
+//원그리기
+context.beginPath();
+// 4. 원 모양 설정
+// context.arc(605, 360, 13, 0, 2 * Math.PI);
+// context.arc(725, 360, 13, 0, 2 * Math.PI);
+context.arc(605, 360, 13, 0, 2 * Math.PI);
+context.arc(725, 360, 13, 0, 2 * Math.PI);
+// 6. 원 내부 색 채우기
+context.fillStyle = "#fff";
+context.fill();

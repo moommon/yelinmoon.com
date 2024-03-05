@@ -26,12 +26,14 @@
       href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/variable/woff2/SUITE-Variable.css"
       rel="stylesheet"
     />
-    <script defer src="./js/main-canvas.js"></script>
+    <!-- <script defer src="./js/main-canvas.js"></script> -->
   </head>
   <body>
     <header>
       <div class="header-content inner">
-        <a class="yelinmoon" href="./index.html">YELINMOON.com</a>
+        <a class="yelinmoon yelinmoon-none" href="./index.html"
+          >YELINMOON.com</a
+        >
         <div class="main-menu-box">
           <a class="main-menu" href="./project.html">project</a>
           <a class="main-menu" href="./practice.html">practice</a>
@@ -44,7 +46,39 @@
         </div>
       </div>
     </header>
+    <!-- <div class="inner"></div> -->
+    <div class="main-home-box inner">
+      <!-- <div class="main-home-canvas">
+        <canvas id="main-canvas"></canvas>
+      </div> -->
 
-    <canvas id="main-canvas"></canvas>
+      <div class="eyes">
+        <div class="eye">
+          <div class="ball"></div>
+        </div>
+        <div class="eye">
+          <div class="ball"></div>
+        </div>
+      </div>
+
+      <div class="main-home-name">YELINMOON.com</div>
+    </div>
+    <footer class="inner">
+      <a class="footer-name" href="yelinmoon.com">YELINMOON.com</a>
+      <a class="footer-link" href="gmail.com">moonriseyell@gmail.com</a>
+      <a class="footer-link" href="instagram.com">@yelllin_mooon</a>
+    </footer>
   </body>
+  <script type="text/javascript">
+    var balls = document.getElementsByClassName("ball");
+    document.onmousemove = function () {
+      var x = (event.clientX * 100) / window.innerWidth + "%";
+      var y = (event.clientY * 100) / window.innerHeight + "%";
+
+      for (var i = 0; i < 2; i++) {
+        balls[i].style.left = x;
+        balls[i].style.top = y;
+      }
+    };
+  </script>
 </html>
