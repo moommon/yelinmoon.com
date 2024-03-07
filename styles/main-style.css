@@ -215,3 +215,16 @@ header .yelinmoon-none {
   display: inline-block;
   margin-top: 20px;
 }
+
+/* practice */
+.practice {
+  height: calc(100vh - 150px);
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.practice img {
+  width: 400px;
+}
