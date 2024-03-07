@@ -85,9 +85,81 @@ header .yelinmoon-none {
   position: absolute;
   z-index: 5;
 }
+.main-home-hover-box {
+  height: calc(100vh - 150px);
+  width: 1200px;
+  position: absolute;
+  z-index: 6;
+}
+.main-home-hover-box .main-home-hover {
+  width: 345px;
+  height: 240px;
+  position: absolute;
+}
+.main-home-hover-box .main-home-hover:nth-child(1) {
+  top: 10%;
+  left: 0%;
+}
+.main-home-hover-box .main-home-hover:nth-child(2) {
+  top: 0%;
+  left: 35.5%;
+}
+.main-home-hover-box .main-home-hover:nth-child(3) {
+  top: 10%;
+  left: 71%;
+}
+.main-home-hover-box .main-home-hover:nth-child(4) {
+  top: 60%;
+  left: 0%;
+}
+.main-home-hover-box .main-home-hover:nth-child(5) {
+  top: 69%;
+  left: 35.5%;
+}
+.main-home-hover-box .main-home-hover:nth-child(6) {
+  top: 60%;
+  left: 71%;
+}
+.main-home-hover-box .main-home-image-popup {
+  width: 345px;
+  height: 240px;
+  position: absolute;
+  display: none;
+}
+.main-home-hover-box .main-home-image-popup img {
+  width: 345px;
+  height: 240px;
+}
+.main-home-hover-box .popup1 {
+  top: 5%;
+  left: 0%;
+}
+.main-home-hover-box .popup1 img {
+  width: 345px;
+  height: 210px;
+}
+.main-home-hover-box .popup2 {
+  top: 0%;
+  left: 35.5%;
+}
+.main-home-hover-box .popup3 {
+  top: 10%;
+  left: 71%;
+}
+.main-home-hover-box .popup4 {
+  top: 60%;
+  left: 0%;
+}
+.main-home-hover-box .popup5 {
+  top: 69%;
+  left: 35.5%;
+}
+.main-home-hover-box .popup6 {
+  top: 60%;
+  left: 71%;
+}
 
 /* 눈 */
-
 .eyes {
   position: absolute;
   top: calc(50vh - 135px);
@@ -115,13 +187,14 @@ header .yelinmoon-none {
 /* proeject */
 
 .main-container {
-  margin-top: 120px;
+  margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 330px);
-  column-gap: 24px;
-  row-gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 405px);
+  column-gap: 0;
+  row-gap: 90px;
 }
+
 .main-container .main-item {
   /* background-color: #111; */
   display: flex;
@@ -133,13 +206,12 @@ header .yelinmoon-none {
 }
 
 .main-container .main-item .main-item-img {
-  margin-top: 20px;
-  width: 80%;
-  border-radius: 5px;
+  width: 600px;
+  height: 360px;
 }
 .main-container .main-item .main-item-name {
   width: 100%;
   text-align: center;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 20px;
 }
