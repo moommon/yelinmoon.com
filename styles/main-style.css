@@ -41,6 +41,7 @@ header .header-content {
 }
 header .header-content .yelinmoon {
   font-size: 40px;
+  display: block;
 }
 header .header-content .main-menu-box {
   display: flex;
@@ -86,6 +87,7 @@ header .yelinmoon-none {
   z-index: 5;
 }
 .main-home-hover-box {
+  display: block;
   height: calc(100vh - 150px);
   width: 1200px;
   position: absolute;
