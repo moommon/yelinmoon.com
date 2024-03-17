@@ -63,6 +63,7 @@ footer {
 footer .footer-name {
   font-size: 20px;
   margin-bottom: 2px;
+  display: block;
 }
 footer .footer-link {
   font-size: 16px;

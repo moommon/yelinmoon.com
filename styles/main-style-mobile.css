@@ -1,3 +1,6 @@
+.mobile {
+  display: none;
+}
 @media (max-width: 500px) {
   * {
     font-family: "SUITE Variable", sans-serif;
@@ -65,12 +68,22 @@
   footer .footer-name {
     font-size: 20px;
     margin-bottom: 2px;
+    display: none;
   }
   footer .footer-link {
     font-size: 16px;
     margin-top: 3px;
   }
-
+  .mobile-footer-fix {
+    position: fixed;
+    font-size: 40px;
+    top: calc(100vh - 50px);
+    height: 50px;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   /* main (index) */
   header .yelinmoon-none {
     visibility: hidden;
@@ -225,7 +238,7 @@
   /* practice */
   .practice {
     height: calc(100vh - 150px);
-    width: 1200px;
+    width: 90vw;
     margin: 0 auto;
     display: flex;
     justify-content: center;
