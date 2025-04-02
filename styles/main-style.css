@@ -71,7 +71,6 @@ footer {
   flex-direction: column;
   position: relative;
   top: calc(100vh - 200px);
-  margin: 0;
 }
 
 footer .footer-name {
