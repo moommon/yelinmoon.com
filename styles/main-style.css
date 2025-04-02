@@ -64,6 +64,16 @@ footer {
   top: calc(100vh - 800px);
   margin: 0;
 }
+
+.main-footer-inner {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: calc(100vh - 200px);
+  margin: 0;
+}
+
 footer .footer-name {
   font-size: 20px;
   margin-bottom: 2px;
